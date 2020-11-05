@@ -72,7 +72,9 @@ public class Practica5 extends javax.swing.JFrame {
         );
         lienzo1Layout.setVerticalGroup(
             lienzo1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(logo1, javax.swing.GroupLayout.DEFAULT_SIZE, 768, Short.MAX_VALUE)
+            .addGroup(lienzo1Layout.createSequentialGroup()
+                .addComponent(logo1, javax.swing.GroupLayout.PREFERRED_SIZE, 684, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         jPanel1.setBackground(new java.awt.Color(50, 50, 50));
@@ -197,23 +199,20 @@ public class Practica5 extends javax.swing.JFrame {
                             .addComponent(Azul)
                             .addComponent(Verde)))
                     .addComponent(jLabel1))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 541, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 453, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(InfIzq)
-                                .addGap(18, 18, 18)
-                                .addComponent(InfDer))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(SupIzq)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(SupDer))
-                            .addComponent(jLabel2))
-                        .addGap(123, 123, 123))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(SupIzq)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(SupDer))
+                    .addComponent(jLabel2)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                         .addComponent(jLabel3)
-                        .addGap(33, 33, 33))))
+                        .addGroup(jPanel1Layout.createSequentialGroup()
+                            .addComponent(InfIzq)
+                            .addGap(18, 18, 18)
+                            .addComponent(InfDer))))
+                .addGap(123, 123, 123))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -258,17 +257,17 @@ public class Practica5 extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(lienzo1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 1112, Short.MAX_VALUE))
+                .addComponent(lienzo1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(808, Short.MAX_VALUE))
+                .addContainerGap(690, Short.MAX_VALUE))
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
                     .addGap(119, 119, 119)
-                    .addComponent(lienzo1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lienzo1, javax.swing.GroupLayout.PREFERRED_SIZE, 684, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
 
@@ -330,13 +329,13 @@ public class Practica5 extends javax.swing.JFrame {
 
     private void InfIzqActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_InfIzqActionPerformed
         // TODO add your handling code here:
-        logo1.setPosition(0, lienzo1.getHeight()-320);
+        logo1.setPosition(0, lienzo1.getHeight()-150);
         logo1.repaint();
     }//GEN-LAST:event_InfIzqActionPerformed
 
     private void InfDerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_InfDerActionPerformed
         // TODO add your handling code here:
-        logo1.setPosition(lienzo1.getX()+lienzo1.getWidth()-320, lienzo1.getHeight()-320);
+        logo1.setPosition(lienzo1.getX()+lienzo1.getWidth()-320, lienzo1.getHeight()-150);
         logo1.repaint();
     }//GEN-LAST:event_InfDerActionPerformed
 
